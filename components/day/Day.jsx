@@ -10,7 +10,6 @@ const Day = ({ dataDay, dayEvents, handleOnDelete, refreshPage, weekStartDate}) 
 
     const currentDay = weekStartDate.getDate();
 
-    console.log(dataDay)
     return (
         <div className="calendar__day" data-day={dataDay}>
             {currentDay === dataDay ? <RedLine /> : null}
